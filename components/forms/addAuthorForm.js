@@ -15,10 +15,10 @@ const addAuthorForm = (obj = {}) => {
       </div>
       <div class="form-group">
         <label for="title">Email</label>
-        <input type="email" class="form-control" id="email ${obj.email} " aria-describedby="Email" placeholder="Enter Email" required>
+        <input type="email" class="form-control" id="email" value="${obj.email || ''}" aria-describedby="Email" placeholder="Enter Email" required>
       </div>
       <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="favorite" ${obj.favorite ? 'checked' : ''}>
+        <input type="checkbox" class="form-check-input" id="favorite" value="${obj.favorite ? 'checked' : ''}">
         <label class="form-check-label" for="favorite">Favorite</label>
       </div>
       <button type="submit" class="btn btn-primary mt-3">Submit Author</button>
